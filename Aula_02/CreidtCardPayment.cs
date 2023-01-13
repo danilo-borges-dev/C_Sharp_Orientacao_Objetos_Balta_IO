@@ -1,5 +1,5 @@
-using Payment;
-
-public partial class Payment {
-    public int ProprieadeB { get; set; }
+namespace Payment {
+    public partial class Payment {
+        public int ProprieadeB { get; set; }
+    }
 }

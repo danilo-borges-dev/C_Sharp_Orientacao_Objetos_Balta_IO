@@ -1,7 +1,26 @@
 ﻿using Curso;
+using static System.Console;
 
-var client = new Client(10, "Danilo", 30);
+Pedido novoPedido = new();
 
-var client2 = new Client(10, "João", 30);
+Cliente cliente = new Cliente();
+Endereco endereco = new Endereco();
+Cidade cidade = new Cidade();
 
-Console.WriteLine(client.Equals(client2));
+novoPedido.Cliente = cliente;
+//cliente.Endereco = endereco;
+endereco.Cidade = cidade;
+
+//if (novoPedido.Cliente?.Endereco?.Cidade != null)
+//{
+//    // faça alguma coisa
+//    Write("Não é Nullo. Faça alguma coisa.");
+//}
+//else
+//{
+//    Write("Lança uma exceção.");
+//}
+
+WriteLine($"Nome da Classe/Objeto: {nameof(novoPedido.PedidoMetodo)}");  // Nome do Método.
+WriteLine($"Nome da Classe/Objeto: {nameof(Pedido.PedidoMetodo)}");  // Nome do Método acesado diretamente pela Notação de Classe.
+WriteLine($"Nome da Proprieade: {nameof(novoPedido.Cliente)}");  // Nome da Prprieadade do Objeto "novoPedido".

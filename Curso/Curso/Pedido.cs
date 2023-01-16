@@ -5,16 +5,13 @@
         public Cliente Cliente { get; set; } = null;
         public double ValorTotal { get; private set; }
 
-        public void PedidoMetodo(int valor)
+        public double PedidoMetodo(int? valor)
         {
-            if (valor != null)
+            if (valor == null)
             {
-                ValorTotal = valor;
+                throw new ArgumentNullException($"Erro: O Valor de {nameof(ValorTotal)} não pode ser nulo.");
             }
-            else
-            {
-                throw new NullReferenceException($"Erro: {nameof(ValorTotal)} nao pode ser nulo.");
-            }
+            return ValorTotal += (int)valor;
         }
     }
 }

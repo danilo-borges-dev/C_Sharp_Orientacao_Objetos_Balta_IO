@@ -1,9 +1,14 @@
 ﻿namespace Curso
 {
-    internal class Pedido
+    internal class Pedido : IDisposable
     {
         public Cliente Cliente { get; set; } = null;
         public double ValorTotal { get; private set; }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
 
         public double PedidoMetodo(int? valorPedido)
         {

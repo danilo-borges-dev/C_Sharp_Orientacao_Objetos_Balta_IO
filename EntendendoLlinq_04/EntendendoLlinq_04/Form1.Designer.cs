@@ -1,6 +1,6 @@
 ﻿namespace EntendendoLlinq_04
 {
-    partial class Form1
+    partial class LinqForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnOk
+            // 
+            this.btnOk.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnOk.Location = new System.Drawing.Point(170, 339);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(98, 56);
+            this.btnOk.TabIndex = 0;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            // 
+            // LinqForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(450, 450);
+            this.Controls.Add(this.btnOk);
+            this.Name = "LinqForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Linq";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button btnOk;
     }
 }

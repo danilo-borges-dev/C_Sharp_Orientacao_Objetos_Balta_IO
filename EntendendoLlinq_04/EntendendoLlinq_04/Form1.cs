@@ -1,8 +1,8 @@
 namespace EntendendoLlinq_04
 {
-    public partial class Form1 : Form
+    public partial class LinqForm : Form
     {
-        public Form1()
+        public LinqForm()
         {
             InitializeComponent();
         }

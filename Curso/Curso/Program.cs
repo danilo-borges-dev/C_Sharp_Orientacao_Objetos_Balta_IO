@@ -1,8 +1,13 @@
 ﻿using Curso;
 using static System.Console;
 
-using (Pedido pedido = new())
-{
-    pedido.PedidoMetodo(valorPedido: 10);
-}
+(int, string) numbers;
 
+numbers = (10, "primeiro");
+
+WriteLine(numbers.Item1);
+WriteLine(numbers.Item2);
+
+var teste = (coordenadas: 1012, longitude: 10);
+
+Console.WriteLine(teste.coordenadas);

@@ -1,0 +1,83 @@
+[33mcommit 5b7c17176358f29693674f1f4b5d43f74a1f3e0b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Wed Jan 18 08:35:55 2023 -0300
+
+    Entendo o funcionamento do linq
+
+[33mcommit e9d72a973245d7d23cb5803563234f97457f2a02[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Wed Jan 18 06:30:34 2023 -0300
+
+    Entendo o funcionamento do linq
+
+[33mcommit f46dc0125d2d897ff334731f63cd57edd3daf069[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Mon Jan 16 07:29:52 2023 -0300
+
+    Iniciado a mao na massa, adicionado as classes de contexto
+
+[33mcommit 4edf438cafad633c512a92841bc91ca51a7f2dc7[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Mon Jan 16 06:30:52 2023 -0300
+
+    Exercicio 118 finalizado com sucesso
+
+[33mcommit 5a7551aa582c80ea48a0c0a4f95608ab5eed60c1[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Mon Jan 16 05:50:22 2023 -0300
+
+    Implementando IEquatable em uma classe Client
+
+[33mcommit 1a74ec3401d112349c25b7d05fdbe3be4ba35776[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Mon Jan 16 05:20:05 2023 -0300
+
+    Revisando nameof
+
+[33mcommit 4ab78a62635d8e9b88e665e3255dd957d85b6b4c[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Sun Jan 15 07:27:36 2023 -0300
+
+    Novidades do C# 6.0
+
+[33mcommit 7935594019eaebacf9afcb7c407fe486fbc03fac[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Sat Jan 14 05:22:26 2023 -0300
+
+    Implementando IEquatable em uma classe Client
+
+[33mcommit 23bb08f4f3b6482271eacfbffea94a032beafc75[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Fri Jan 13 07:44:26 2023 -0300
+
+    Comparando Objetos com IEquatable e Equals Method
+
+[33mcommit a175234ceef59efd39323428560994d36f9b1cfb[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Thu Jan 12 07:36:40 2023 -0300
+
+    Aplicando conceitos de Sintax Sugar
+
+[33mcommit 0f6594b342f4bf9add73f141ccb78275920c3a88[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Thu Jan 12 07:11:37 2023 -0300
+
+    Compreendendo Partial Class
+
+[33mcommit c81a8a53bcaee9c2c4b9b11e9814ba1a4dce6356[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Sun Jan 8 06:50:51 2023 -0300
+
+    Entendo Abstracao e Herenca
+
+[33mcommit d94bac427891511954f137ec61c77c3eb951dce5[m
+Author: danilo borges <danilosilva2017@hotmail.com>
+Date:   Sun Jan 8 06:40:06 2023 -0300
+
+    Primeiro Projeto
+
+[33mcommit 6dba05495705148a07d9c0c70114d537741dd726[m
+Author: Danilo Borges <39575564+danilo-borges-dev@users.noreply.github.com>
+Date:   Sun Jan 8 06:38:41 2023 -0300
+
+    Initial commit

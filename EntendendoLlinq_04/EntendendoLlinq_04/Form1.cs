@@ -13,7 +13,7 @@ namespace EntendendoLlinq_04
         {
             List<Produto> listaProdutos = new Produto().GetAll();
 
-            
+            var lista = LinqSkip(listaProdutos, 3);
         }
 
         // Filtrar

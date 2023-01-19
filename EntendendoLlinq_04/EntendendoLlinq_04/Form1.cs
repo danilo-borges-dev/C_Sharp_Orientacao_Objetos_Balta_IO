@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace EntendendoLlinq_04
 {
     public partial class LinqForm : Form
@@ -16,7 +18,9 @@ namespace EntendendoLlinq_04
             // LinqAgrupar(listaProdutos);
             // LinqSingle(21, listaProdutos);
             // LinqSingleOrDefault(12, listaProdutos);
-            LinqFirst(12, listaProdutos);
+            // LinqFirst(12, listaProdutos);
+            MessageBox.Show($"Maior Preço $ {LinqMax(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}\n" + 
+            $"Menor Preço $ {LinqMin(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
         }
 
         // Filtrar

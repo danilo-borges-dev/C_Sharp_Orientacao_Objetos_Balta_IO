@@ -13,7 +13,8 @@ namespace EntendendoLlinq_04
         {
             List<Produto> listaProdutos = new Produto().GetAll();
 
-            var lista = LinqSkip(listaProdutos, 3);
+            // dataGridProdutos.DataSource = LinqSkip(listaProdutos, 3);
+            dataGridProdutos.DataSource = LinqTake(listaProdutos, 1);
         }
 
         // Filtrar

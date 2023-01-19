@@ -13,20 +13,7 @@ namespace EntendendoLlinq_04
         {
             List<Produto> listaProdutos = new Produto().GetAll();
 
-            // LinqFiltrar(listaProdutos);
-            // LinqFiltrarClassificar(listaProdutos);
-            // LinqAgrupar(listaProdutos);
-            // LinqSingle(21, listaProdutos);
-            // LinqSingleOrDefault(12, listaProdutos);
-            // LinqFirst(12, listaProdutos);
-            /*
-                MessageBox.Show($"Maior Preço $ {LinqMax(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}\n" + 
-                $"Menor Preço $ {LinqMin(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
-            */
-            // MessageBox.Show($"Total de produtos na lista {LinqCount(listaProdutos)}");
-            // MessageBox.Show($"Valor total de todos os Produtos $ {LinqSum(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
-            MessageBox.Show($"Média dos Produtos = {LinqAverage(listaProdutos).ToString("C")}");
-
+            
         }
 
         // Filtrar

@@ -24,7 +24,8 @@ namespace EntendendoLlinq_04
                 $"Menor Preço $ {LinqMin(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
             */
             // MessageBox.Show($"Total de produtos na lista {LinqCount(listaProdutos)}");
-            MessageBox.Show($"Valor total de todos os Produtos $ {LinqSum(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
+            // MessageBox.Show($"Valor total de todos os Produtos $ {LinqSum(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
+            MessageBox.Show($"Média dos Produtos = {LinqAverage(listaProdutos).ToString("C")}");
 
         }
 

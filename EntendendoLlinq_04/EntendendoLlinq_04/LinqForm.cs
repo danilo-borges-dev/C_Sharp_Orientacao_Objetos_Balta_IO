@@ -43,5 +43,15 @@
                 ).Sum();
             return result;
         }
+
+        // Média Aritmética
+        private double LinqAverage (List<Produto> listaProdutos)
+        {
+            double result = (
+                    from produto in listaProdutos
+                    select produto.Quantidade
+                ).Average();
+            return result;
+        }
     }
 }

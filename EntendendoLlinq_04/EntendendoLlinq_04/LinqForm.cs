@@ -33,6 +33,15 @@
                 ).Count();
             return result;
         }
-    }
 
+        // Somar
+        private decimal LinqSum(List<Produto> listaProdutos)
+        {
+            decimal result = (
+                    from produto in listaProdutos
+                    select (produto.Quantidade * produto.Unitario)
+                ).Sum();
+            return result;
+        }
+    }
 }

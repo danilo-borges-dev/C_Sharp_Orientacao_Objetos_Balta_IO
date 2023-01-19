@@ -20,10 +20,11 @@ namespace EntendendoLlinq_04
             // LinqSingleOrDefault(12, listaProdutos);
             // LinqFirst(12, listaProdutos);
             /*
-            MessageBox.Show($"Maior Preço $ {LinqMax(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}\n" + 
-            $"Menor Preço $ {LinqMin(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
+                MessageBox.Show($"Maior Preço $ {LinqMax(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}\n" + 
+                $"Menor Preço $ {LinqMin(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
             */
-            MessageBox.Show($"Total de produtos na lista {LinqCount(listaProdutos)}");
+            // MessageBox.Show($"Total de produtos na lista {LinqCount(listaProdutos)}");
+            MessageBox.Show($"Valor total de todos os Produtos $ {LinqSum(listaProdutos).ToString("F2", CultureInfo.InvariantCulture)}");
 
         }
 

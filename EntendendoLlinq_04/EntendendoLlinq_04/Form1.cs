@@ -56,7 +56,10 @@ namespace EntendendoLlinq_04
 
             foreach (var grupo in listaProdutosAgrupada)
             {
-                MessageBox.Show($"Grupo: {grupo.Key}");
+                foreach (var produto in grupo)
+                {
+                    MessageBox.Show($"Grupo: {grupo.Key} - ID {produto.Id} - {produto.Nome}");
+                }
             }
         }
     }

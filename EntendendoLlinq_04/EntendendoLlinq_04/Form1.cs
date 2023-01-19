@@ -14,7 +14,9 @@ namespace EntendendoLlinq_04
             // LinqFiltrar(listaProdutos);
             // LinqFiltrarClassificar(listaProdutos);
             // LinqAgrupar(listaProdutos);
-            LinqSingle(21, listaProdutos);
+            // LinqSingle(21, listaProdutos);
+            // LinqSingleOrDefault(12, listaProdutos);
+            LinqFirst(12, listaProdutos);
         }
 
         // Filtrar
@@ -82,6 +84,46 @@ namespace EntendendoLlinq_04
                 {
                     MessageBox.Show(ex.HResult + " - " + ex.Message);
                 }
+            }
+        }
+
+        // Single or Default 
+        private void LinqSingleOrDefault(int id, List<Produto> listaProdutos)
+        {
+            try
+            {
+                var produto = listaProdutos.SingleOrDefault(p => p.Id >= id);
+
+                if (produto != null)
+                {
+                    MessageBox.Show($"ID {produto.Id} - {produto.Nome}");
+                }
+                else
+                {
+                    MessageBox.Show($"Produto com ID {id} não econtrado.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.HResult + " - " + ex.Message);
+            }            
+        }
+
+        // First - Se Achar 2 ou mais vai pegar o Primeiro, mas senão achar nenhum Lança uma Exceção
+        private void LinqFirst(int id, List<Produto> listaProdutos)
+        {
+            try
+            {
+                var produto = listaProdutos.First(p => p.Id == id);
+                MessageBox.Show($"ID {produto.Id} - {produto.Nome}");
+            }
+            catch (Exception ex)
+            {
+                if(ex.HResult == -2146233079)
+                {
+                    MessageBox.Show("Produto não econtrado ou existem mais de um produto com mesmo ID.");
+                }
+                MessageBox.Show(ex.HResult + " - " + ex.Message);
             }
         }
     }

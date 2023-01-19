@@ -1,6 +1,6 @@
 ﻿namespace EntendendoLlinq_04
 {
-    partial class LinqForm
+    partial class Metodos
     {
         /// <summary>
         ///  Required designer variable.

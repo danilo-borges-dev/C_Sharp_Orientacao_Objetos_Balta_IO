@@ -10,8 +10,12 @@ namespace EntendendoLlinq_04
         private void btnOk_Click(object sender, EventArgs e)
         {
             List<Produto> listaProdutos = new Produto().GetAll();
-            LinqFiltrar(listaProdutos);
+
+            // LinqFiltrar(listaProdutos);
+            LinqFiltrarClassificar(listaProdutos);
         }
+
+        // Filtrar
         private void LinqFiltrar (List<Produto> listaProdutos)
         {
             var listaProdutosFiltrada =
@@ -20,6 +24,21 @@ namespace EntendendoLlinq_04
                 select produto;
 
             foreach (var produto in listaProdutosFiltrada)
+            {
+                MessageBox.Show($"ID {produto.Id} - {produto.Nome}");
+            }
+        }
+
+        // Filtrar e Classificar 
+        private void LinqFiltrarClassificar (List<Produto> listaProdutos)
+        {
+            var listaProdutosFiltradaClassificada =
+                from produto in listaProdutos
+                where produto.Id < 15
+                orderby produto.Nome ascending
+                select produto;
+
+            foreach (var produto in listaProdutosFiltradaClassificada)
             {
                 MessageBox.Show($"ID {produto.Id} - {produto.Nome}");
             }

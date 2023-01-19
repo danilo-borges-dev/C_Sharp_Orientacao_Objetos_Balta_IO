@@ -13,11 +13,12 @@ namespace EntendendoLlinq_04
 
             // LinqFiltrar(listaProdutos);
             // LinqFiltrarClassificar(listaProdutos);
-            LinqAgrupar(listaProdutos);
+            // LinqAgrupar(listaProdutos);
+            LinqSingle(21, listaProdutos);
         }
 
         // Filtrar
-        private void LinqFiltrar (List<Produto> listaProdutos)
+        private void LinqFiltrar(List<Produto> listaProdutos)
         {
             var listaProdutosFiltrada =
                 from produto in listaProdutos
@@ -31,7 +32,7 @@ namespace EntendendoLlinq_04
         }
 
         // Filtrar e Classificar 
-        private void LinqFiltrarClassificar (List<Produto> listaProdutos)
+        private void LinqFiltrarClassificar(List<Produto> listaProdutos)
         {
             var listaProdutosFiltradaClassificada =
                 from produto in listaProdutos
@@ -46,7 +47,7 @@ namespace EntendendoLlinq_04
         }
 
         // Agrupar
-        private void LinqAgrupar (List<Produto> listaProdutos)
+        private void LinqAgrupar(List<Produto> listaProdutos)
         {
             var listaProdutosAgrupada =
                 from produtos in listaProdutos
@@ -59,6 +60,27 @@ namespace EntendendoLlinq_04
                 foreach (var produto in grupo)
                 {
                     MessageBox.Show($"Grupo: {grupo.Key} - ID {produto.Id} - {produto.Nome}");
+                }
+            }
+        }
+
+        // Single - Se achar mais de Um ou Nenhum Lance uma Exceção
+        private void LinqSingle(int id, List<Produto> listaProdutos)
+        {
+            try
+            {
+                var produto = listaProdutos.Single(p => p.Id == id);
+                MessageBox.Show($"ID {produto.Id} - {produto.Nome}");
+            }
+            catch (Exception ex)
+            {
+                if (ex.HResult == -2146233079)
+                {
+                    MessageBox.Show("ID não econtrado ou encontrado mais de um produto.");
+                }
+                else
+                {
+                    MessageBox.Show(ex.HResult + " - " + ex.Message);
                 }
             }
         }

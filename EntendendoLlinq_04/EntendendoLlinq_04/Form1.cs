@@ -12,7 +12,8 @@ namespace EntendendoLlinq_04
             List<Produto> listaProdutos = new Produto().GetAll();
 
             // LinqFiltrar(listaProdutos);
-            LinqFiltrarClassificar(listaProdutos);
+            // LinqFiltrarClassificar(listaProdutos);
+            LinqAgrupar(listaProdutos);
         }
 
         // Filtrar
@@ -41,6 +42,21 @@ namespace EntendendoLlinq_04
             foreach (var produto in listaProdutosFiltradaClassificada)
             {
                 MessageBox.Show($"ID {produto.Id} - {produto.Nome}");
+            }
+        }
+
+        // Agrupar
+        private void LinqAgrupar (List<Produto> listaProdutos)
+        {
+            var listaProdutosAgrupada =
+                from produtos in listaProdutos
+                group produtos by produtos.Setor into setorGrupo
+                orderby setorGrupo.Key ascending
+                select setorGrupo;
+
+            foreach (var grupo in listaProdutosAgrupada)
+            {
+                MessageBox.Show($"Grupo: {grupo.Key}");
             }
         }
     }
